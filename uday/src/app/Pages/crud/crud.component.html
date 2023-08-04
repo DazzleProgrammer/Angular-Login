@@ -1,0 +1,39 @@
+<div class="main">
+  <div class="text-center pt-2">
+    <h3 class="">
+      <strong> Enter The Data </strong>
+    </h3>
+  </div>
+  <div
+    class="container d-flex align-items-end justify-content-center"
+    style="height: 35%"
+  >
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <input
+          type="text"
+          name="fName"
+          placeholder="Enter the First Name"
+          [(ngModel)]="Name.fName"
+        />
+      </div>
+      <div class="col-md-6">
+        <input
+          type="text"
+          name="lName"
+          placeholder="Enter the Last Name"
+          [(ngModel)]="Name.lName"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <button class="btn btn-light mb-3" (click)="addInfo()">Submit</button>
+    <button class="btn btn-light mb-3 ms-3" (click)="del()">Clear</button>
+  </div>
+</div>
+<!-- <style>
+    div{
+        border: 1px solid black;
+    }
+</style> -->

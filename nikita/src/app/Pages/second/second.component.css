@@ -1,0 +1,20 @@
+.add{
+    color: black;
+    border: 1px solid rgb(114, 94, 161);
+    transition: 0.5s ease;
+}
+.add:hover{
+    background-color:rgb(114, 94, 161) ;
+}
+button:hover{
+    color: white;
+    transform: scale(1.1);
+}
+.btn-del{
+    border: none;
+    transition: 0.5s ease;
+}
+.btn-del:hover{
+    color: black;
+    transform: scale(1.2);
+}

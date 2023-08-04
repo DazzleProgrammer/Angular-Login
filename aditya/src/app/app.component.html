@@ -1,0 +1,49 @@
+<!-- <div class="container main d-flex flex-column align-items-center m-5">
+    <h1 class="mt-5">ngStyle</h1>
+    <br><br>
+    <div class="m-2">
+        <input type="number" placeholder="enter day number" [(ngModel)]="num" />
+        <input class="m-2" type="text" placeholder="enter the style" [(ngModel)]="style" />
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" (click)="change()" />
+        <br>
+        <div class="pb-5 m-5" [ngSwitch]="num" [ngStyle]="{backgroundColor: bg,color: clr,border: bdr}">
+            <h2 *ngSwitchCase="1">Monday</h2>
+            <h2 *ngSwitchCase="2">Tuesday</h2>
+            <h2 *ngSwitchCase="3">Wednesday</h2>
+            <h2 *ngSwitchCase="4">Thursday</h2>
+            <h2 *ngSwitchCase="5">Friday</h2>
+            <h2 *ngSwitchCase="6">Saturday</h2>
+            <h2 *ngSwitchCase="7">Sunday</h2>
+            <h2 *ngSwitchDefault="">Enter a number between 1-7</h2>
+        </div>
+
+    </div>
+</div> -->
+
+<!-- <div class="container">
+    <br>
+    <br>
+    <div class="hiddenDiv">
+        <h2 class="d-flex justify-content-center">{{isData}}</h2>
+        <p class="pt-5 d-flex justify-content-center"> <span class="fw-bold">{{isName}}</span> &nbsp; COO, AMERIMAR ENTERPRISES, INC. </p>
+    </div>
+    <div class="container my-auto d-flex justify-content-center">
+        <div class="row">
+            <div class="d-flex justify-content-center gap-3 px-4 py-2" style="background-color: rgb(206, 27, 27);">
+                <a (click)="showData('0')">
+                    <img class="img-size" src="https://trydo.rainbowit.net/assets/images/client/testimonial-1.jpg" alt>
+                </a>
+                <a (click)="showData('1')">
+                    <img class="img-size" src="https://trydo.rainbowit.net/assets/images/client/testimonial-3.jpg" alt>
+                </a>
+                <a (click)="showData('2')">
+                    <img class="img-size" src="https://trydo.rainbowit.net/assets/images/client/testimonial-3.jpg" alt>
+                </a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <app-login></app-login> -->
+
+
+<router-outlet></router-outlet>

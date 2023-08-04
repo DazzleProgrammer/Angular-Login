@@ -1,0 +1,29 @@
+<div class="container m-5 ">
+    <form [formGroup]="Firstform" (ngSubmit)="addInfo()">
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>NAME</mat-label>
+                <input matInput placeholder="Enter Name" type="text" formControlName="name">
+                <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>DESIGNATION</mat-label>
+                <input matInput placeholder="Enter Designation" formControlName="designation">
+                <mat-icon matSuffix>badge</mat-icon>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>PHONE NUMBER</mat-label>
+                <input matInput placeholder="Enter Phone Number" type="number" formControlName="phoneNo">
+                <mat-icon matSuffix>call</mat-icon>
+            </mat-form-field>
+        </p>
+        <p class="m-3 d-flex " style="gap: 35px;">
+            <button class="btn btn-success" type="submit" [disabled]="Firstform.invalid">SUBMIT</button>
+            <button class="btn btn-danger" routerLink="/home/data1">CANCLE</button>
+        </p>
+    </form>
+</div>

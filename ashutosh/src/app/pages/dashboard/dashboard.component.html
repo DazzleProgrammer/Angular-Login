@@ -1,0 +1,34 @@
+  <mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleChange()">
+     <mat-icon>menu</mat-icon>
+   </button>
+   <span>My App</span>
+   <span class="example-spacer"></span>
+    <button mat-button color="warn" (click)="openTime()" >
+     <mat-icon > schedule</mat-icon>
+   </button>
+   <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+  <button class="btn btn-danger" routerLink="">LogOut</button>
+  </mat-toolbar>
+  
+
+ 
+
+  <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" class="list" id="abc" opened ishidden="hidden">
+      <ul  >
+        <li routerLink="/dashboard/first">First</li>
+        <li routerLink="/dashboard/second">Second</li>
+        <li routerLink="/dashboard/third">Third</li>
+      </ul>
+    </mat-drawer>
+
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+
+
+

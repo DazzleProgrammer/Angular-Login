@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+    <button (click)="toggleSidebar()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Angular App</span>
+    <span class="example-spacer"></span>
+    
+    <button routerLink="/login" class="primary">
+     Logout
+    </button>
+  </mat-toolbar>
+
+  <!-- <button mat-button (click)="openDialog()">Launch dialog</button> -->
+
+
+  <div class="container-fluid mt-5" >
+    <mat-drawer-container class="example-container">
+        <mat-drawer mode="side" opened [hidden]="ishidden"><ul style="list-style: none; font-size: 20px;" >
+            <li  routerLink="/dashboard/first">Home</li>
+            <li  routerLink="/dashboard/second">Pipes</li>
+            <li routerLink="/dashboard/third">Contact</li>
+          </ul>
+        </mat-drawer>
+        <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>
+      </mat-drawer-container>
+  </div>

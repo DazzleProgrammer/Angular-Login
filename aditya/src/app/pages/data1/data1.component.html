@@ -1,0 +1,31 @@
+<div class="container mt-4 d-flex justify-content-end ">
+    <h1 class="me-5" style="font-weight: 900; font-size: 2.5em;">Data Field&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+    <button class="btn btn-success" (click)="openDialog()">ADD </button>
+</div>
+<br>
+<hr>
+<div class="container">
+    <table class="table" style="border: 4px solid whitesmoke; text-align: start;">
+        <thead>
+            <tr>
+                <th scope="col" style="text-align: center;">S.No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Designation</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of locData,let i=index">
+                <th scope="row" style="text-align: center;">{{i+1}}</th>
+                <td>{{a.name}}</td>
+                <td>{{a.designation}}</td>
+                <td>{{a.phoneNo}}</td>
+                <td>
+                    <mat-icon aria-hidden="false" fontIcon="delete" style="color:rgb(95, 94, 94)" (click)="deleteInfo(i)"></mat-icon>&nbsp;
+                    <mat-icon aria-hidden="false" fontIcon="edit" style="color:rgb(13, 127, 11)" [routerLink]="[a.name,a.designation,a.phoneNo]"></mat-icon>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

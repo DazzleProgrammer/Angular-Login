@@ -1,0 +1,36 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <!-- <p>Auto-resizing sidenav</p>
+      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <button (click)="showFiller = !showFiller" mat-raised-button>
+        Toggle extra text
+      </button> -->
+    <ul>
+      <a
+        routerLink="/dashboard/first"
+        style="text-decoration: none; color: black"
+        >Text</a
+      >
+    </ul>
+    <ul routerLink="/dashboard/second">
+      Todolist
+    </ul>
+    <ul routerLink="/dashboard/third">
+      About
+    </ul>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle(); see()">
+      <i *ngIf="check == true" class="fas fa-arrow-left"></i>
+      <i *ngIf="check != true" class="fas fa-arrow-right"></i>
+    </button>
+    <!-- <mat-drawer-content>
+      <router-outlet> </router-outlet>
+    </mat-drawer-content> -->
+    <button type="button" class="btn btn-secondary">
+      <a href="/" style="text-decoration: none; color: aliceblue">Logout</a>
+    </button>
+  </div>
+  <router-outlet> </router-outlet>
+</mat-drawer-container>

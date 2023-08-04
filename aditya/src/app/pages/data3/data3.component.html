@@ -1,0 +1,32 @@
+<div class="container m-5">
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ToDo Tool</h1>
+    <div class="row ">
+        <div class="col-6">
+            <input type="text" class="form-control" placeholder="Enter Task" [(ngModel)]="task" />
+        </div>
+        <div class="col-1">
+            <button class="btn btn-dark" [disabled]="task=='' " (click)="Add()">Add</button>
+        </div>
+        <div class="col-2 justify-content-end">
+            <button class="btn btn-danger" (click)="DeleteAll()">Delete All</button>
+        </div>
+    </div>
+    <hr><br>
+    <div class="row m-3" *ngFor="let data of list; let d=index">
+        <div class="col-1">
+            <button class="btn btn-success btn-sm pull-right" (click)="Delete(d)">Delete</button>
+        </div>
+
+        <div class="col-5 m-0">
+            <div class="form-check my-1">
+                <input class="form-check-input" (change)="chnageS(d,data.present)" type="checkbox" [checked]="data.present" id="{{d}}">
+                <label class="form-check-label" for="{{d}}" *ngIf="data.present">
+              <s>{{data.TaskData}}</s>
+            </label>
+                <label class="form-check-label" for="{{d}}" *ngIf="!data.present">
+              {{data.TaskData}}
+            </label>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+
+<h1 class="text-center">Time:{{date |date:'mediumTime'}}</h1>
+<h1 class="text-center">Date:{{date |date:'shortDate'}}</h1>
+<h1 class="text-center">{{date |date:'dd/MM/yyyy HH:mm'}}</h1>
+<h1 style="text-align: center; color: red;background-color:black;">Unformatted Date:{{date}}</h1>
+<h1 style="text-align: center; color: green;background-color: black;">Formatted Date:{{date|date}}</h1>
+<h1 class="text-center">Date in India:{{date|date:'short':'IST'}}</h1>
+<h1 style="text-align: center; background-color: black;color: blue;">Date in USA:{{date|date:'short':'CDT'}}</h1>

@@ -1,0 +1,56 @@
+<!-- <h1 class="text-center">property directive</h1>
+<ul>
+  <li>
+    [ngStyle]
+  </li>
+  <li>
+    [ngClass]
+  </li>
+</ul>
+
+<h1 class="text-center">ngstyle</h1>
+
+<div class="d-flex justify-content-center">
+  <input type="number" (input)="ChangeNumber(numberCheck.value)" #numberCheck>
+  
+</div>
+<h1 [ngStyle]="design">Lucifer MoonLight</h1>
+
+<br>
+<hr>
+
+<h1 [ngClass]="status">ngClass</h1>
+
+<div class="d-flex justify-content-center">
+  <button class="btn btn-primary" (click)="checkStatus('center')">center</button>
+  <button class="btn btn-primary" (click)="checkStatus('right')">right</button>
+  <button class="btn btn-primary" (click)="checkStatus('left')">left</button>
+
+</div>
+
+<br><br>
+<br><br>
+
+<h1 class="text-center">To Do</h1>
+<div class="d-flex justify-content-center">
+  
+  <input type="text" placeholder="enter here" [(ngModel)]="ToDo">
+  <button class="btn btn-primary ms-2" (click)="AddToDo()">ADD ToDo</button>
+
+</div>
+
+<div class="row" *ngFor="let i of ToDoArray">
+  <div class="col-xl-12 p-4">
+    <div class="card">
+      <div class="card-body text-center">
+        {{i}}
+      </div>
+    </div>
+
+  </div>
+</div> -->
+
+<!-- <app-parent-component></app-parent-component> -->
+
+
+<router-outlet></router-outlet>

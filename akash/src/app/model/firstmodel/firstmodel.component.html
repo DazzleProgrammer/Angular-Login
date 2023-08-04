@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter Name" name="name" [(ngModel)]="info.name" >
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Enter Desgination</mat-label>
+        <input matInput placeholder="Enter Here" name="desihnation" [(ngModel)]="info.designation">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+
+      <div class="row" style="margin-left:17px ;">
+        <div class="col-md-6">
+            <button mat-raised-button color="primary" (click)="addInfo()" >ADD</button>
+        </div>
+        <div class="col-md-6">
+            <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+        </div>
+      </div>
+
+</div>

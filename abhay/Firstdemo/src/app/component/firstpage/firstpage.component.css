@@ -1,0 +1,38 @@
+.subtitle,
+.sub,
+.subt{
+    color: red;
+}
+
+.image{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.box{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.but span{
+    border-radius: 10px;
+    background: linear-gradient(to right,red, orange);
+    padding: 11px;
+}
+.container1,
+.container2{
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.subt{
+    text-align: center;
+}
+.container3{
+    text-align: center;
+}
+h1{
+    color: black solid;
+}
+.p-2{
+    margin: 20px 20px 20px 20px;
+}

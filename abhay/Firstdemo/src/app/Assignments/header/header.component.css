@@ -1,0 +1,91 @@
+.container1{
+    margin-left: 40%;
+    margin-top: 2%;
+}
+.container-fluid{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 3%;
+}
+.btn{
+    color: white ;
+    
+}
+h1{
+   font-weight: bolder;
+    text-transform:uppercase;
+    font-family: Montserrat,sans-serif;
+    color:red;
+   
+}
+.flex-container{
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    display: flex;
+}
+@media(min-width: 1200px){
+    .flex-container{
+        max-width: 1260px;
+    }
+}
+.container2{
+    margin-left: 11%;
+    margin-right: 11%;
+}
+.flex-item2{
+    margin-left: 6%;
+   
+}
+.flex-item3{
+    margin-left: 6%;
+}
+.banner{
+    background-image: url("https://trydo.rainbowit.net/assets/images/bg/bg-image-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    max-width: 100%;
+    
+    }
+@media(max-width:1599px)and (min-width:1200px){
+    .banner{
+        min-height: 900px;
+        display: block;
+    }
+}
+@media(max-width:991px)and(min-width:768px){
+    .container-fluid{
+        padding: 30px 0;
+    }
+}
+
+.p-2{
+    color: white;
+}
+h4{
+    color: white;
+    font-weight: 40%;
+    font-family: sans-serif;
+}
+p{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 20%;
+}
+.grad{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 120px;
+    font-weight: 400px;
+}
+@media(max-width:620px){
+    .grad{
+    font-size: 60px;
+    }
+}
+@media(max-width:300px){
+    .grad{
+        font-size: 30px;
+    }
+} 
+

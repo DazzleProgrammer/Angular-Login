@@ -1,0 +1,103 @@
+
+
+<hr class="sep-1">
+<div class="container mt-5">
+    <h1 class="text-center"><b>Date</b></h1>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1>{{date | date:'M/d/yy, h:mm a'}}</h1>
+            <h1>{{date | date:'MMM d, y, h:mm:ss a'}}</h1>
+            <h1>{{date | date:'MMMM d, y, h:mm:ss a z'}}</h1>
+            <h1>{{date | date:'EEEE, MMMM d, y, h:mm:ss a zzzz'}}</h1>
+            <h1>{{date | date:'MMM d, y'}}</h1>
+            <h1>{{date | date:'h:mm:ss a zzzz'}}</h1>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <h1>{{date | date:'MMMM d, y'}}</h1>
+            <h1>{{date | date:'EEEE, MMMM d, y'}}</h1>
+            <h1>{{date | date:'h:mm a'}}</h1>
+            <h1>{{date | date:'h:mm:ss a'}}</h1>
+            <h1>{{date | date:'h:mm:ss a z'}}</h1>
+            <h1>{{date | date:'h:mm:ss a zzzz'}}</h1>
+         
+        </div>
+    </div>
+</div>
+
+
+<hr class="sep-1"/>
+
+
+<div class="container mt-5 mb-5">
+    <h1 class="text-center"><b>Currency</b></h1>
+    <div class="row">
+        <div class="col-md-3 text-center">
+            <h3> AMERICA: &nbsp; &nbsp; {{1658.363 | currency}}</h3>
+            <h3> INDIA: &nbsp; &nbsp; {{1658.363 | currency:'INR':'symbol-narrow'}}</h3>
+            <h3> AUSTRALIA: &nbsp; &nbsp; {{1658.363 | currency:'AUD':'symbol-narrow'}}</h3>
+            <h3> RUSSIA:&nbsp; &nbsp; {{1658.363 | currency:'RUB':'symbol-narrow'}}</h3>
+            <h3> GERMANY: &nbsp; &nbsp; {{1658.363 | currency:'EUR':'symbol-narrow'}}</h3>
+            <h3> INDONESIA: &nbsp; &nbsp; {{1658.363 | currency:'IDR':'symbol-narrow'}}</h3>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <h3> PAKISTAN:&nbsp; &nbsp; {{1658.363 | currency:'PKR':'symbol-narrow'}}</h3>
+            <h3> SWAZILAND: &nbsp; &nbsp; {{1658.363 | currency:'SZL':'symbol-narrow'}}</h3>
+            <h3> THAILAND: &nbsp; &nbsp; {{1658.363 | currency:'THB':'symbol-narrow'}}</h3>
+            <h3> TURKEY: &nbsp; &nbsp; {{1658.363 | currency:'TRY':'symbol-narrow'}}</h3>
+            <h3> UNITED ARAB EMIRATES: &nbsp; &nbsp; {{1658.363 | currency:'AED':'symbol-narrow'}}</h3>
+            <h3> CANADA: &nbsp; &nbsp; {{1658.363 | currency:'CAD':'symbol-narrow'}}</h3>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <h3> AFGHANISTAN:&nbsp; &nbsp; {{1658.363 | currency:'AFN':'symbol-narrow'}}</h3>
+            <h3> ARGENTINA: &nbsp; &nbsp; {{1658.363 | currency:'ARS':'symbol-narrow'}}</h3>
+            <h3> AUSTRIA: &nbsp; &nbsp; {{1658.363 | currency:'EUR':'symbol-narrow'}}</h3>
+            <h3> BELARUS: &nbsp; &nbsp; {{1658.363 | currency:'BYN':'symbol-narrow'}}</h3>
+            <h3> BRAZIL: &nbsp; &nbsp; {{1658.363 | currency:'BRL':'symbol-narrow'}}</h3>
+            <h3> CAMBODIA: &nbsp; &nbsp; {{1658.363 | currency:'KHR':'symbol-narrow'}}</h3>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <h3> EGYPT:&nbsp; &nbsp; {{1658.363 | currency:'EGP':'symbol-narrow'}}</h3>
+            <h3> HUNGARY: &nbsp; &nbsp; {{1658.363 | currency:'HUF':'symbol-narrow'}}</h3>
+            <h3> ICELAND: &nbsp; &nbsp; {{1658.363 | currency:'ISK':'symbol-narrow'}}</h3>
+            <h3> ISRAEL: &nbsp; &nbsp; {{1658.363 | currency:'ILS':'symbol-narrow'}}</h3>
+            <h3> JORDAN: &nbsp; &nbsp; {{1658.363 | currency:'JOD':'symbol-narrow'}}</h3>
+            <h3> KUWAIT: &nbsp; &nbsp; {{1658.363 | currency:'KWD':'symbol-narrow'}}</h3>
+        </div>
+    </div>
+</div>
+
+<hr class="sep-1">
+
+<div class="container mt-5 mb-5">
+   <div class="row">
+    <h1 class="text-center"><b>Percentage</b></h1>
+    <div class="col-md-12 text-center">
+        <p>A: {{a | percent}}</p>
+        <p>A: {{a/100 | percent}}</p>
+        <p>B: {{b | percent:'3.3-5'}}</p>
+    </div>
+   </div>
+  </div>
+
+  <hr class="sep-1">
+
+
+
+
+<!-- 
+  <div class="main">
+    <fieldset><legend>One</legend></fieldset>
+<fieldset><legend>Two</legend></fieldset>
+<fieldset><legend>Three</legend></fieldset>
+<fieldset><legend>Four</legend></fieldset>
+<fieldset><legend>Eight</legend></fieldset>
+<fieldset><legend>Seven</legend></fieldset>
+<fieldset><legend>Six</legend></fieldset>
+<fieldset><legend>Five</legend></fieldset>
+  </div> -->
+
+  

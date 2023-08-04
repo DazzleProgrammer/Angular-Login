@@ -1,0 +1,29 @@
+
+<button class="btn btn-primary" style="background-color: black;color: whitesmoke;" (click)="openDialog()">Add Another Line</button>
+
+
+<br>
+<hr>
+
+<div class="container" style="height: 100;">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">S. no.</th>
+        <th scope="col">Name</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-active" *ngFor="let a of data, let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{a.name}}</td>
+        <td>{{a.designation}}</td>
+        <td><mat-icon aria-hidden="false" aria-label="Example home icon" (click)="deleteInfo(i)" fontIcon="delete"></mat-icon>
+          <mat-icon aria-hidden="false" aria-label="Example home icon" routerLink="/dashboard/edit" fontIcon="edit"></mat-icon>
+        </td>
+      </tr>
+      </tbody>
+      </table>
+  </div>

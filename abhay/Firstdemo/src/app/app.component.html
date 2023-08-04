@@ -1,0 +1,307 @@
+<!-- <h1 class="text-center">App component</h1> -->
+
+<!-- <app-Custom></app-Custom>
+<app-custom2></app-custom2>
+<app-newone></app-newone>
+    <app-header></app-header>
+        <app-firstpage></app-firstpage>
+        <app-footer></app-footer> -->
+
+
+<!-- <div class="container">
+    <div class="text-center">
+        <h1>
+            String Interpolation
+        </h1>
+        <h3>{{title}}{{title}}{{title}}{{title}}</h3>
+        <p>{{title}}</p>
+    </div>
+    <div class="text-center">
+        <h1>
+            Property Binding
+        </h1>
+       <button class="btn btn-primary" [disabled]="isdisabled">Submit</button>
+    </div>
+    <div class="text-center">
+        <h1>
+            Event Binding
+        </h1>
+       <button class="btn btn-primary" (click)="clicked()">Submit</button>
+    </div>
+    <div class="text-center">
+        <h1>
+            Assignment1
+        </h1>
+      Event:<input type="text" (input)="Submit($event)"placeholder="Enter Here">
+    </div>
+    <div>
+        <br>
+        <h1 class="text-center">Box1</h1>
+            <h3 class="text-center">{{Name}}</h3>
+        
+        <br>
+        <h1 class="text-center">Box2</h1>
+        <h3 class="text-center" [innerText]="Name"></h3>
+    </div>
+    <div class="text-center">
+        <h1>
+            two way binding
+        </h1>
+      Enter here: <input type="text" placeholder="Enter Here" [(ngModel)]="Great" >
+      <h2>{{Great}}</h2>
+    </div>
+   
+</div>
+
+
+<div class="container">
+    <div class="text-center">
+        <h1>
+            Assignment1
+        </h1>
+       Enter Here: <input type="'text" placeholder="Enter Here" [(ngModel)]="Name">
+       <br>
+<h2>{{Name}}</h2>
+<button class="btn btn-danger" [disabled]="Name===''">Reset</button>
+    </div>
+    </div>
+    <br>
+
+      <div class="container">
+        <div class="text-center">
+            <h1>
+                Assignment
+            </h1>
+           Enter Here: <input type="'text" placeholder="Enter Here" [(ngModel)]="Great">
+           <br>
+    <h2>{{Great}}</h2>
+    <button class="btn btn-danger" [disabled]="Great===''">Reset</button>
+        </div>
+        </div> 
+        
+          -->
+
+               <!-- Directives -->
+
+         <!-- <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Structural Directive</h1>
+                    <ul class="d-flex justify-content-center" style="list-style-type: none;">
+                        <li>1.*ngIf</li><br>
+                        <li>2.*ngFor</li><br>
+                        <li>3.*ngSwitch</li><br>
+                    </ul>
+
+                    <div class="text-center">
+                        <h1>ngIf</h1>
+                        <h2 *ngIf="first;else second">Hey this is first</h2>
+
+                        <ng-template #second>
+                            <h2>Hey this is second</h2>
+                        </ng-template>
+
+                        <br>
+                        <h1>NgFor</h1>
+
+                         <h1>{{Name}}</h1> -->
+                        <!-- <div *ngFor="let abc of Name;let i=index">
+                            <h1 style="background-color: brown; color: white;">{{i+1}}-{{abc}}</h1>
+                        </div>
+
+                        <br>
+                        <h1>NgSwitch</h1>
+                        <input type="number" placeholder="Enter Day" [(ngModel)]="Days">
+                        {{Days}}
+                        <div [ngSwitch]="Days">
+                            <h2 *ngSwitchCase="1">Sunday</h2>
+                            <h2 *ngSwitchCase="2">Monday</h2>
+                            <h2 *ngSwitchCase="3">Tuesday</h2>
+                            <h2 *ngSwitchCase="4">Wednesday</h2>
+                            <h2 *ngSwitchCase="5">Thursday</h2>
+                            <h2 *ngSwitchCase="6">Friday</h2>
+                            <h2 *ngSwitchCase="7">Saturday</h2>
+                            <h2 *ngSwitchDefault>Enter number between 1 to 7</h2>
+                        </div>
+
+                        <br>
+                        <h1>Practice</h1>
+                        <input type="number" placeholder="Enter Year" [(ngModel)]="Months">
+                        {{Months}}
+                        <div [ngSwitch]="Months">
+                            <h2 *ngSwitchCase="1">Jan</h2>
+                            <h2 *ngSwitchCase="2">Feb</h2>
+                            <h2 *ngSwitchCase="3">Mar</h2>
+                            <h2 *ngSwitchCase="4">Apr</h2>
+                            <h2 *ngSwitchCase="5">May</h2>
+                            <h2 *ngSwitchCase="6">Jun</h2>
+                            <h2 *ngSwitchCase="7">Jul</h2>
+                            <h2 *ngSwitchCase="8">Aug</h2>
+                            <h2 *ngSwitchCase="9">Sept</h2>
+                            <h2 *ngSwitchCase="10">Oct</h2>
+                            <h2 *ngSwitchCase="11">Nov</h2>
+                            <h2 *ngSwitchCase="12">Dec</h2>
+                            <h2 *ngSwitchDefault>Enter Number between 1 to 12</h2>
+
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+         </div>      
+
+
+
+         <br><br><br>
+
+         <h1 class="text-center">Property Directive</h1>
+         <br>
+         <ul class="text-center" style="list-style-type: none;">
+            <li>
+                1.[ngStyle]
+            </li>
+            <li>
+                2.[ngClass]
+            </li>
+         </ul>
+         <h1 class="text-center">
+            NgStyle
+         </h1>
+         <div class="d-flex justify-content-center">
+            <input type="number" (input)="ChangeNumber(numberCheck.value)"#numberCheck>
+            <p>
+                {{Check}}
+            </p>
+           
+         </div>
+         <h1 [ngStyle]="Design" >First App</h1>
+         <br>
+         <br>
+         <br>
+         <hr>
+         <div style="width: 100%; height: 100px;">
+         <h1 [ngClass]="status">
+            NgClass
+         </h1>
+         </div>
+         <br>
+
+         <div class="d-flex justify-content-center">
+            <button class="btn btn-primary" (click)="checkStatus('center')">center</button>
+            <button class="btn btn-primary" (click)="checkStatus('right')">right</button>
+            <button class="btn btn-primary" (click)="checkStatus('left')">left</button>
+         </div> -->
+
+         <!-- <br><br>
+
+         <input type="number" placeholder="Enter Here" (input)="multipleCheck(inputMultiple.value)" #inputMultiple> -->
+         <!-- <h1 *ngIf="isMultiple else notMultiple">This is multiple of 5</h1>
+         <ng-template #notMultiple>
+            <h1>This is not multiple of 5</h1>
+         </ng-template> -->
+
+        <!-- <br><br><br>
+
+     <h1 class="text-center">Todo List</h1>   
+
+     <div class="d-flex justify-content-center">
+        <input type="text" placeholder="Enter Here" [(ngModel)]="Todo">
+        <button class="btn btn-primary ms-2" [disabled]="Todo==''" (click)="AddTodo()">
+            Add Todo
+        </button>
+     </div>
+     <br>
+     <hr>
+
+     <div class="row" *ngFor="let i of TodoArray">
+        <div class="col-x1-12 p-4">
+            <div class="card">
+                <div class="card-body text-center">
+                  <h3>
+                    {{i}}
+                  </h3>
+                </div>
+              </div>
+        </div>
+     </div>
+
+     <br><br><br><br><br><br> -->
+
+     <!-- <div class="text-center">
+        <h1>Parent component</h1>
+        <h2>{{title}}</h2>
+     </div>
+     <div class="text-center">Custom Directive</div> 
+     <app-newone [abc]="title"></app-newone> -->
+
+
+     
+    
+
+     <!-- <br><br><br><br><br><br><br>
+
+     <div style="border: 3px solid black; box-shadow: 6px 6px 4px 3px black; height: 500px; justify-content: center;" class="m-4 text-center" >
+    <h1 class="text-center">Assignment</h1>
+    <input type="Number" class="text-center" placeholder="Enter Here" [(ngModel)]="Months">
+    
+    <div [ngSwitch]="Months">
+        <h1 [ngStyle]="{backgroundColor:'green',color:'red',borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="1">Jan</h2>
+                            </h1>
+                            <h1 [ngStyle]="{backgroundColor:'red', color:'yellow'  ,borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="2">Feb</h2>
+                            </h1>
+                            <h1 [ngStyle]="{backgroundColor:'yellow', color:'blue' ,borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="3">Mar</h2>
+                            </h1>
+                            <h1 [ngStyle]="{backgroundColor:'blue', color:'purple'  ,borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="4">Apr</h2>
+                            </h1>
+                            <h1 [ngStyle]="{backgroundColor:'purple', color:'pink' ,borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="5">May</h2>
+                            </h1>
+                            <h1 [ngStyle]="{backgroundColor:'pink', color:'black'  ,borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="6">Jun</h2>
+                            </h1>
+                            <h1 [ngStyle]="{backgroundColor:'black', color:'skyblue'  ,borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="7">Jul</h2>
+                            </h1>
+                            <h1 [ngStyle]="{backgroundColor:'skyblue', color:'brown'  ,borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="8">Aug</h2>
+                            </h1>
+                            <h1 [ngStyle]="{backgroundColor:'brown', color:'orange'  ,borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="9">Sept</h2>
+                            </h1>
+                            <h1 [ngStyle]="{backgroundColor:'orange', color:'grey' ,borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="10">Oct</h2>
+                            </h1>
+                            <h1 [ngStyle]="{backgroundColor:'grey', color:'black'  ,borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="11">Nov</h2>
+                            </h1>
+                            <h1 [ngStyle]="{backgroundColor:'black', color:'green'  ,borderRadius:'3px'}">
+                            <h2 *ngSwitchCase="12">Dec</h2>
+                            </h1>
+                            <h2 *ngSwitchDefault>Enter Number between 1 to 12</h2>
+                            
+      
+    </div>
+    
+   
+    </div>
+    
+    <br><br><br><br><br><br>
+ -->
+
+
+ 
+
+
+
+ <!-- <h1 class="text-center">Service Dependency Injection</h1>
+ Name: <input type="text" placeholder="Enter Name" [(ngModel)]="name">
+
+ <div class="btn btn btn-primary ms-2" (click)="saveTodo()">ADD</div>
+
+ <app-parent-component></app-parent-component> -->
+ <router-outlet></router-outlet>
+ 

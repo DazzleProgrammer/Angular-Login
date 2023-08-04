@@ -1,0 +1,31 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-container {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  /* border: 1px solid #555; */
+  background-color:aliceblue;
+}
+
+li{
+  list-style: none;
+  margin-right: 2px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 2px solid whitesmoke;
+  box-shadow: 10px 5px 5px antiquewhite;
+  /* background-color: black;
+  color: aliceblue; */
+}
+/* 
+li:hover{
+  background-color:cadetblue;
+  border-radius: 2px;
+} */
+
+
+
+

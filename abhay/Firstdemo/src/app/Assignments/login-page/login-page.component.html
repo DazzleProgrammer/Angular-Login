@@ -1,0 +1,31 @@
+<div class="full">
+    <div class="box">
+    <div class="container">
+        <div class="heading">
+            <h1 class="text">Dashboard</h1>
+        </div>
+        <div class="input-field">
+            <input type="text" class="input" placeholder="Username"  name="username" [(ngModel)]="username">
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="input-field">
+            <input type="password" class="input" placeholder="Password" name="password" [(ngModel)]="password">
+            <i class="bx bx-lock"></i>
+        </div>
+        <div class="input-field">
+            
+            <input type="submit" class="submit" value="Login"  (click)="loginUser()">
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <input type="checkbox" id="Check">
+                <label for="Check">Remember me</label>
+            </div>
+            <div class="right">
+                <label> <a routerLink="/forgot">Forgot Password?</a></label>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

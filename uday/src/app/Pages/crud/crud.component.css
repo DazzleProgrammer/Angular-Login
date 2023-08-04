@@ -1,0 +1,12 @@
+.main {
+  height: 100%;
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#215600", endColorstr="#72905A", GradientType=1 );
+}
+input {
+  border-color: linear-gradient(
+    90deg,
+    hsla(52, 94%, 21%, 1) 0%,
+    hsla(56, 21%, 52%, 1) 100%
+  );
+}

@@ -1,0 +1,27 @@
+<div class="text-end">
+    <button class="btn btn-secondary add" mat-button (click)="openDialog()">Add Members</button>
+</div>
+
+<div class="text-center p-3">
+    <table class="ms-3" style="width: 90%;">
+        <thead class="align-middle">
+            <h1 class=" text-center">
+                Member list
+            </h1>
+        </thead>
+        <tr>
+            <th class="p-3 ms-2" style="border: 1px solid white;">S.no.</th>
+            <th class="p-3 ms-2" style="border: 1px solid white;">Name</th>
+            <th class="p-3 ms-2" style="border: 1px solid white;">Designation</th>
+            <th class="p-3 ms-2" style="border: 1px solid white; width: 20%;">Deletion</th>
+        </tr>
+        <tr *ngFor="let d of storeinfo; let i=index">
+            <th class="p-2 ms-2" style="border: 1px solid whitesmoke;">{{i+1}}</th>
+            <td class="p-2 ms-2" style="border: 1px solid whitesmoke;">{{d.name}}</td>
+            <td class="p-2 ms-2" style="border: 1px solid whitesmoke;">{{d.desg}}</td>
+            <td class="p-2 ms-2" style="border: 1px solid whitesmoke;">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="delete" (click)="dltmem(i)"></mat-icon>
+            </td>
+        </tr>
+    </table>
+</div>

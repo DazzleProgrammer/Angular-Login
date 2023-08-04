@@ -1,0 +1,69 @@
+<!-- <div class="maindiv text-centre">
+  <h1 class="h1 text-centre mb-5">{{title}}</h1>
+  
+  <input class="inp1" type="number" name="num1" [(ngModel)]="num1">
+  <input class="inp2" type="number" name="num2" [(ngModel)]="num2">
+  <br>
+  <br>
+  <div class="btngrp text-centre">
+    <button class="btn btn-primary mb-2" (click)="add()">Add</button>
+    <button class="btn btn-primary mb-2" (click)="Subtract()">Sub</button>
+    <button class="btn btn-primary mb-2" (click)="Multiply()">Multiply</button>
+    <button class="btn btn-primary" (click)="Divide()">Divide</button>
+  </div>
+  <br>
+  <h3>Result: {{num3}}</h3>
+</div> -->
+
+
+  <!-- <app-child-component (xyz)="get($event)"></app-child-component> -->
+
+  <!-- ----------ARRAY ADD AND DELETE--------------------- -->
+
+  <!-- <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <input type="text" name="form" placeholder="Enter here" #myuser>
+        <button (click)="onclick(myuser)" class="btn btn-info ms-2">Create user</button>
+        <table class="table table-light table-bordered mt-3">
+          <thead class="thead-light">
+            <tr>
+              <th>S.No.</th>
+              <th>User Name</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let i of userlist; index as sNo">
+              <td>{{sNo + 1}}</td>
+              <td>{{i}}</td>
+              <td>
+                <button (click)="ondelete(sNo)" class="btn btn-danger">Remove</button>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div> -->
+<!-- ------------------------------------NEW TODO LIST--------------------------------------- -->
+<!-- 
+<div style="display: flex; justify-content: center;">
+  <div class="outer-container">
+    <div class="input-add">
+      <input #addtask type="text" placeholder="Add your task">
+      <button (click)="newtask(addtask.value)" id="newtaskbtn">+</button>
+    </div>
+    <div class="removeallcont" *ngIf="tasks.length >=1">
+      <button (click)="removeall()">Remove all</button>
+    </div>
+    <div class="allnotes">
+      <div class="notes-card" *ngFor="let item of tasks">
+        <p>{{item.title}}</p>
+        <button (click)="removetask(item.id)">x</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+<router-outlet></router-outlet>

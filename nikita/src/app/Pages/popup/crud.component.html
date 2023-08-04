@@ -1,0 +1,31 @@
+<div class="main">
+    <div class="text-center pt-2">
+        <h1>
+            <strong>
+                Add members
+            </strong>
+        </h1>
+    </div>
+    <div class="container align-items-end justify-content-center" style="height: 40%;">
+            <div class="text-center">
+                <input type="text" name="name" placeholder="Enter the Name" [(ngModel)]="Name.name">
+            </div>
+            <br>
+            <div class="text-center">
+                <input type="text" name="desg" placeholder="Enter the Designation" [(ngModel)]="Name.desg">
+            </div>
+    </div>
+    <div class="container text-center">
+        <button class="btn btn-light mb-3" (click)="addmem()">
+            Submit
+        </button>
+        <button class="btn btn-light mb-3 ms-3" (click)="delt()">
+            Clear
+        </button>
+    </div>
+</div>
+<!-- <style>
+    div{
+        border: 1px solid black;
+    }
+</style> -->

@@ -1,0 +1,37 @@
+
+
+
+ <div class="container mt-4">
+  <form [formGroup]="FirstForm" (ngSubmit)="addInfo()">
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Enter Name" name="name" formControlName="name">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" >
+    <mat-label>Designation</mat-label>
+    <input matInput placeholder="Enter Designation" name="designation" formControlName="designation">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+   
+  </mat-form-field>
+
+  <div class="row">
+    <div class="col-md-6">
+      <button mat-raised-button color="primary" type="submit" [disabled]="FirstForm.invalid" >Add</button>
+    </div>
+
+    <div class="col-md-6">
+      <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+      
+    </div>
+
+
+  </div>
+
+</form>
+
+ </div>
+ 
+

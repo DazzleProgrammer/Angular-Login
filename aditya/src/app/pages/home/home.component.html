@@ -1,0 +1,45 @@
+<mat-toolbar style=" background-color: #339330; color: rgb(255, 255, 255);">
+    <button mat-icon-button class="example-icon" (click)="toggleChange()">
+            <mat-icon style="color: rgb(255, 255, 255);">menu</mat-icon>
+          </button>
+    <span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        MY APP
+    </span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" (click)="openTime()">
+            <mat-icon style="color: rgb(255, 255, 255);" >schedule</mat-icon>
+          </button>
+    <button mat-icon-button class="example-icon" (click)="openDate()">
+            <mat-icon style="color: rgb(255, 255, 255);">date_range</mat-icon>
+          </button>
+    <button mat-icon-button class="example-icon" (click)="openProfile()">
+            <mat-icon style="color: rgb(255, 255, 255);">account_circle</mat-icon>
+          </button>
+    <button class=" btn btn-light" routerLink="" style="color: #000000">LOGOUT</button>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" class="slider" id="abc" opened>
+        <li>
+            <p routerLink="/home/data1">
+                <mat-icon>ballot</mat-icon> DATA
+            </p>
+        </li>
+        <li>
+            <p routerLink="/home/data3">
+                <mat-icon>edit_notifications</mat-icon> TODO
+            </p>
+        </li>
+        <li>
+            <p routerLink="/home/data2">
+                <mat-icon>collections</mat-icon> POST
+            </p>
+        </li>
+
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet>
+
+        </router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

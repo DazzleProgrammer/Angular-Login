@@ -1,0 +1,29 @@
+<div class="text-center mt-2">
+    <button (click)="openDialog()" class="btn btn-primary">ADD</button>
+</div>
+
+<br><hr>
+<br><br><br>
+<table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col">S. No.</th>
+        <th scope="col">NAME</th>
+        <th scope="col">DESIGNATION</th>
+        <th scope="col">ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of data; let i=index">
+        <th scope="row" >{{i+1}}</th>
+        <td>{{d.name}}</td>
+        <td>{{d.designation}}</td>
+        <td>
+            <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="delete"></mat-icon> -->
+            <button class="btn btn-danger" (click)="OnDelete(i)">Delete</button>
+
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>

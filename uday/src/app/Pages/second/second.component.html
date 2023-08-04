@@ -1,0 +1,33 @@
+<div class="text-center">
+  <button class="btn btn-secondary add" mat-button (click)="openDialog()">
+    Add Items
+  </button>
+</div>
+
+<div class="text-center p-3">
+  <table class="ms-3" style="width: 90%">
+    <thead class="align-middle"></thead>
+    <tr>
+      <th class="p-3 ms-2" style="border: 1px solid black">Sr</th>
+      <th class="p-3 ms-2" style="border: 1px solid black">First Name</th>
+      <th class="p-3 ms-2" style="border: 1px solid black">Last Name</th>
+      <th class="p-3 ms-2" style="border: 1px solid black; width: 10%">
+        Delete
+      </th>
+    </tr>
+    <tr *ngFor="let d of main1; let i = index">
+      <th class="p-2 ms-2" style="border: 1px solid grey">{{ i + 1 }}</th>
+      <td class="p-2 ms-2" style="border: 1px solid grey">
+        {{ d.fName }}
+      </td>
+      <td class="p-2 ms-2" style="border: 1px solid grey">
+        {{ d.lName }}
+      </td>
+      <td class="p-2 ms-2" style="border: 1px solid grey">
+        <button class="btn btn-del" (click)="del(i)">
+          <i class="bi bi-trash"></i>
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>

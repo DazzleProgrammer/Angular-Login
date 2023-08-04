@@ -1,0 +1,83 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.full{
+    background-image: url(https://wallpapers.com/images/featured/dark-5u7v1sbwoi6hdzsb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 70px;
+   
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+.text{
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px 5px 0;
+
+}
+.input-field{
+   display: flex;
+    flex-direction: column;
+}
+.input{
+    height: 45px;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: black;
+    padding: 0 0 0 45px;
+    
+}
+i{
+    position: relative;
+    top: -33px;
+    left: 20px;
+    color: black;
+}
+.submit{
+    border: none;
+    border-radius: 30px;
+    height: 45px;
+    outline: none;
+    color: black;
+    margin-right: 33px;
+}
+.submit:hover{
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+.left{
+    display: flex;
+}
+label a{
+    color: white;
+   
+}
+.right{
+    margin-right: 35px;
+}
+

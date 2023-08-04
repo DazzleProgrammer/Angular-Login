@@ -1,0 +1,33 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleChange()">
+     <mat-icon>menu</mat-icon>
+   </button>
+   <span>My App</span>
+   <span class="example-spacer"></span>
+   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+     <mat-icon>favorite</mat-icon>
+   </button>
+   <button routerLink="/">
+    Logout
+  </button>
+</mat-toolbar>
+
+ <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" style="width: 10%;" opened [hidden]="ishidden">
+       <ul style="list-style: none; padding-left: 0%;" class="full">
+        <li routerLink="/index/first">
+            first
+        </li>
+        <li routerLink="/index/second">
+            second
+        </li>
+        <li routerLink="/index/third">
+            third
+        </li>
+       </ul>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+
+  </mat-drawer-container>

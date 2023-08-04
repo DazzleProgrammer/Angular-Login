@@ -1,0 +1,9 @@
+.demo-inline-calendar-card {
+    width: 300px;
+    justify-content: center;
+    margin: auto;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+}

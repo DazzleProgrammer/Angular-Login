@@ -1,0 +1,64 @@
+<!-- <div style=" height: 400px;" class="m-4 p-4 text-center">
+<h1 class="text-center">Parent Component</h1>
+
+<input type="text" placeholder="Enter Here" [(ngModel)]="Something">
+
+<app-child-component [abc]="Something"></app-child-component>
+<app-child-component2 [abcd]="Something"></app-child-component2>
+<app-child-component3 [abcde]="Something"></app-child-component3>
+
+
+</div>
+
+<br><br><br><br><br><br> -->
+
+<!-- <div style="border: 2px solid black;">
+
+<h1 class="text-center">@View Child</h1>
+
+Name: <input type="text" placeholder="Enter Here" #name>
+<button class="btn btn-primary m-2 " (click)="Func(name.value)">Add</button>
+
+<app-child-component5></app-child-component5>
+
+</div> -->
+
+<!-- <br><br><br><br><br><br> -->
+
+<!-- <div style="border: 2px solid black;">
+<h1 class="text-center">@Output</h1>
+<h1 class="text-center">ParentComponent</h1>
+<h1>Name:{{Name}}</h1>
+
+<app-child-component4 (CheckName)="GetName($event)"></app-child-component4>
+</div> -->
+
+
+<!-- <br><br><br><br><br> -->
+
+<!-- <div style="border: 2px black solid;">
+<h1 class="text-center">@Output Practice</h1>
+<h1 class="text-center">Parent Component</h1>
+<h1>Data:{{Data}}</h1>
+
+<app-child-component4 (CheckData)="GetData($event)" ></app-child-component4>
+</div>
+
+<br><br><br><br><br>
+
+<div style="border: 2px solid black;">
+<h1 class="text-center">lifecycle in angular</h1>
+
+<input type="text" placeholder="Enter Here" [(ngModel)]="Name">
+
+<app-child-component5 *ngIf="isdismiss" [abc]="Name">NameByContent:{{Name}}</app-child-component5>
+
+<button class="btn btn-danger" (click)="isdismiss=false">Dismiss</button>
+</div> -->
+
+<br>
+
+<h1>Todo List</h1>
+<ul *ngFor="let a of data">
+    <li>{{a}}</li>
+</ul>

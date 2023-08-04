@@ -1,0 +1,35 @@
+<div class="container-fluid p-3 sticky-top sidebar">
+  <mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleSidebar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span><h1>Applications</h1></span>
+    <span class="example-spacer"></span>
+    <button class="btn btn-danger" routerLink="/login">Log out</button>
+  </mat-toolbar>
+</div>
+
+
+<div class="container-fluid p-3 sidebar" >
+  <mat-drawer-container class="example-container" >
+    <mat-drawer mode="side" opened style="width: 20%;" [hidden]="hide" class="sticky">
+      <ul style="list-style-type: square;">
+        <li routerLink="/dashboard/first" class="p-1 list">
+          Dashboard
+        </li>
+        <li routerLink="/dashboard/second" class="p-1 list">
+          Member list
+        </li>
+        <li routerLink="/dashboard/third" class="p-1 list">
+          Projects
+        </li>
+        <li routerLink="/dashboard/fourth" class="p-1 list">
+          Services
+        </li>
+      </ul>
+    </mat-drawer>
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

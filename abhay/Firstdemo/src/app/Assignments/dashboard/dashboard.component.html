@@ -1,0 +1,27 @@
+
+<mat-toolbar class="navi">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleChange()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <mat-icon>share</mat-icon>
+   <a routerLink="/loginpage"><button style="border-radius: 8px;">Log Out</button></a>
+  </mat-toolbar>
+
+  <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" id="abc" opened ishidden="hidden">
+        <ul class="box" style="list-style: none;">
+            <li routerLink="/dashboard/first">First</li>
+            <li routerLink="/dashboard/second">Second</li>
+            <li routerLink="/dashboard/third">Third</li>
+        </ul>
+    </mat-drawer>
+    
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
